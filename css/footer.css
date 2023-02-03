@@ -1,0 +1,120 @@
+.contato {
+    background: #CFA033;   
+    color: #F2F1F0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    max-height: 500px;
+    padding: 40px 40px 60px 40px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    position: relative;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+.footer-contato {
+    padding: 20px;
+}
+
+.footer-contato li {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer-contato span {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #927227;
+    font-weight: 500;
+}
+
+.footer-contato a {
+    text-decoration: none;
+    color: #F2F1F0;
+}
+
+.footer-contato .lk {
+    letter-spacing: .02rem;
+}
+
+.footer-contato .insta {
+    letter-spacing: -.03rem;
+}
+
+.footer-contato .wpp {
+    letter-spacing: -.09rem;
+}
+
+.email {
+    position: relative;
+}
+
+.email::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url(img/contato.svg) no-repeat center center;
+    position: absolute;
+    left: -48px;
+}
+
+footer {
+    font-size: 0.875rem;
+    color: #927227;
+}
+
+@media (max-width: 800px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        padding: 60px 40px;
+        gap: 20px;
+    }
+ .footer-contato {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .email::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        background: url(img/contato.svg) no-repeat center center;
+        position: absolute;
+        left: -24px;
+    }
+
+    footer {
+        font-size: 0.875rem;
+        color: #927227;
+        text-align: center;
+    }
+
+    .footer-contato li {
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 10px;
+    }
+    
+    .footer-contato span {
+        text-transform: uppercase;
+        font-size: .875rem;
+        color: #927227;
+        font-weight: 500;
+    }
+
+    .footer-texto{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: center;
+    }
+
+    }

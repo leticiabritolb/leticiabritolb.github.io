@@ -1,0 +1,156 @@
+.experiencia {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    align-items: center;
+}
+.experiencia .subtitulo {
+    color: #F2F1F0;
+}
+.experiencia-texto {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    max-width: 42ch;
+    color: #262626;
+}
+strong {
+    color: #0D0D0D;
+}
+.empresa {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 0px;
+    position: relative;
+}
+.empresa-ano {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    color: #666565;
+    font-size: 0.875rem;
+}
+.empresa::before {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, #1B5C51 0%, #488B80 96.15%);
+    position: absolute;
+    top: 80px;
+    left: -4px; 
+}
+.empresa-titulo {
+        margin-top: 0px;
+        font-size: 1.125rem;
+        line-height: 1.1rem;
+        font-weight: bold;
+        display: block;
+}
+.empresa-texto {
+    font-size: .85rem;
+    line-height: 1.4rem;
+    color: #262626;  
+}
+.empresa-cargo {
+    font-size: 1.125rem;
+    line-height: 1.1rem;
+    font-weight: bold;
+    display: block;
+}
+.empresa-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.empresa-habilidades li
+{   padding: 15px 10px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+} 
+@media (max-width: 800px) {
+
+.experiencia {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+}
+.experiencia .subtitulo {
+    color: #d6d6d6;
+}
+.experiencia-texto {
+    font-size: 1.25rem;
+}
+.empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    padding-top: 10px;}
+
+.empresa-ano::before {
+    content: "Ano: ";
+}
+}
+@media (max-width: 400px) {
+    .empresa {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 20px 20px 20px 0px;
+    position: relative;
+    }
+   .empresa-titulo {
+        margin-top: 0px;
+        font-size: 1.125rem;
+        line-height: 1.1rem;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+}
+.empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    padding-top: 10px;
+    text-align: center;
+}
+.empresa-texto {
+    font-size: .85rem;
+    line-height: 1.4rem;
+    color: #262626;
+    text-align: left;
+}
+.empresa-cargo {
+    margin-top: 1px;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    line-height: 1.1rem;
+    font-weight: bold;
+    display: block;
+}
+.empresa-habilidades {
+    display: flex;
+    justify-content:center
+    ;
+    justify-content: center;
+    gap: 5px;
+}
+.empresa-habilidades li
+{   justify-content: center;
+    justify-items: center;
+    padding: 10px 5px;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1); 
+} 
+}
